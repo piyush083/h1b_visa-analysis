@@ -1,0 +1,64 @@
+
+--8) Find the average Prevailing Wage for each Job for each Year (take part time and full time separate). Arrange the output in descending order - [Certified and Certified Withdrawn.]
+
+
+CERTIFIED WITHDRAWN with both full_time position (Year =2011)
+-------------------------------------------------------------
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/No/2011' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='N' and year='2011' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/Yes/2011' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='Y' and year='2011' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+
+CERTIFIED WITHDRAWN with both full_time position (Year =2012)
+-------------------------------------------------------------
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/No/2012' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='N' and year='2012' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/Yes/2012' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='Y' and year='2012' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+
+CERTIFIED WITHDRAWN with both full_time position (Year =2013)
+-------------------------------------------------------------
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/No/2013' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='N' and year='2013' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/Yes/2013' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='Y' and year='2013' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+
+CERTIFIED WITHDRAWN with both full_time position (Year =2014)
+-------------------------------------------------------------
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/No/2014' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='N' and year='2014' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/Yes/2014' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='Y' and year='2014' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+
+CERTIFIED WITHDRAWN with both full_time position (Year =2015)
+-------------------------------------------------------------
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/No/2015' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='N' and year='2015' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/Yes/2015' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='Y' and year='2015' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+
+CERTIFIED WITHDRAWN with both full_time position (Year =2016)
+-------------------------------------------------------------
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/No/2016' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='N' and year='2016' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/hduser/Project/Hive/Question 8b/Yes/2016' row format delimited fields terminated by ','
+select job_title,full_time_position,year,avg(prevailing_wage),case_status as average from h1b_final where full_time_position ='Y' and year='2016' and case_status in ('CERTIFIED','CERTIFIED-WITHDRAWN') group by job_title,full_time_position,year,case_status order by average desc;
+
+

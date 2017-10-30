@@ -1,0 +1,4 @@
+register /usr/local/hive/lib/hive-exec-1.2.1.jar
+register /usr/local/hive/lib/hive-common-1.2.1.jar
+data1 = LOAD 'hdfs://localhost:54310/user/hive/warehouse/project.db/h1b_final' USING PigStorage('\t') as (s_no:double,case_status:chararray,employer_name:chararray,soc_name:chararray,job_title:chararray,full_time_position:chararray,prevailing_wage:double,year:chararray,worksite:chararray,longitude,latitude);
+
